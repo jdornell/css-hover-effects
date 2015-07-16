@@ -1,0 +1,261 @@
+body {
+  background: #FDE3A7; }
+
+.btn-container {
+  width: 900px;
+  margin: 150px auto;
+  text-align: center;
+  font-family: 'Roboto Slab', serif; }
+
+.btn-transition {
+  width: 200px;
+  padding: 15px;
+  background: transparent;
+  margin: 30px;
+  color: #2C3E50;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease; }
+
+.btn-no-transition {
+  width: 200px;
+  padding: 15px;
+  background: transparent;
+  margin: 30px;
+  color: #2C3E50;
+  font-size: 20px;
+  cursor: pointer;
+  border: none; }
+
+/* FADE */
+.btn-fade-in {
+  border: 2px solid #2C3E50; }
+  .btn-fade-in:hover {
+    background: #2C3E50;
+    color: #fff; }
+
+.btn-fade-out {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50;
+  background: #2C3E50;
+  color: #fff; }
+  .btn-fade-out:hover {
+    border: 2px solid #2C3E50;
+    background: transparent;
+    color: #2C3E50; }
+
+/* INSET */
+.btn-inset {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-inset:hover {
+    box-shadow: inset 0 0 0 4px #2C3E50; }
+
+/* FLOAT */
+.btn-float {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-float:hover {
+    transform: translateY(-10px); }
+
+/* SINK */
+.btn-sink {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-sink:hover {
+    transform: translateY(10px); }
+
+/* RADIUS */
+.btn-radius-full {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-radius-full:hover {
+    border-radius: 30px;
+    border: 2px solid #2C3E50;
+    background: transparent;
+    color: #2C3E50; }
+
+.btn-radius-half {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-radius-half:hover {
+    border-radius: 0 15px 0 15px;
+    border: 2px solid #2C3E50;
+    background: transparent;
+    color: #2C3E50; }
+
+.btn-to-radius {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50;
+  border-radius: 30px; }
+  .btn-to-radius:hover {
+    border: 2px solid #2C3E50;
+    background: transparent;
+    color: #2C3E50;
+    border-radius: 0; }
+
+/* BORDER */
+.btn-border {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-border:hover {
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    letter-spacing: 5px; }
+
+.btn-border-left {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-border-left:hover {
+    border-left: 10px solid #2C3E50;
+    letter-spacing: 5px;
+    font-weight: bold; }
+
+.btn-border-top {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-border-top:hover {
+    border-right: 10px solid #2C3E50;
+    letter-spacing: 5px;
+    font-weight: bold; }
+
+/* SWEEP */
+.btn-sweep-down {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50;
+  background: #2C3E50;
+  color: #fff;
+  position: relative; }
+  .btn-sweep-down:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    background: rgba(98, 136, 173, 0.1);
+    transition: all 1s ease; }
+
+.btn-sweep-down:hover:before {
+  height: 100%; }
+
+.btn-sweep-right {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50;
+  background: #2C3E50;
+  color: #fff;
+  position: relative; }
+  .btn-sweep-right:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(98, 136, 173, 0.1);
+    transition: all 1s ease; }
+
+.btn-sweep-right:hover:before {
+  width: 100%; }
+
+/* DOTTED */
+.btn-dotted {
+  border: 2px solid #2C3E50; }
+  .btn-dotted:hover {
+    border: 2px dotted #2C3E50; }
+
+/* DASHED */
+.btn-dashed {
+  border: 2px solid #2C3E50; }
+  .btn-dashed:hover {
+    border: 2px dashed #2C3E50; }
+
+/* SHADOW */
+.btn-shadow {
+  border: 2px solid #2C3E50;
+  background: transparent;
+  color: #2C3E50; }
+  .btn-shadow:hover {
+    box-shadow: 2px 2px 0 #000; }
+
+.btn-shadow-static {
+  border: 2px solid #2C3E50;
+  box-shadow: 2px 2px 0 #000; }
+  .btn-shadow-static:hover {
+    box-shadow: 0 0 0; }
+
+/* SOCIAL BUTTONS */
+.btn-social-fb {
+  box-shadow: 0 5px 0 #293F63;
+  border: none;
+  border-radius: 4px;
+  background: #3B5997;
+  color: #fff; }
+  .btn-social-fb:hover {
+    box-shadow: 0 4px 0 #293F63;
+    top: 2px; }
+
+.btn-social-tw {
+  box-shadow: 0 5px 0 #2695BC;
+  border: none;
+  border-radius: 4px;
+  background: #2CA9E1;
+  color: #fff; }
+  .btn-social-tw:hover {
+    box-shadow: 0 4px 0 #2695BC;
+    top: 2px; }
+
+.btn-social-dr {
+  box-shadow: 0 5px 0 #B23D6D;
+  border: none;
+  border-radius: 4px;
+  background: #E84D89;
+  color: #fff; }
+  .btn-social-dr:hover {
+    box-shadow: 0 4px 0 #B23D6D;
+    top: 2px; }
+
+.btn-social-li {
+  box-shadow: 0 5px 0 #005377;
+  border: none;
+  border-radius: 4px;
+  background: #0073B2;
+  color: #fff; }
+  .btn-social-li:hover {
+    box-shadow: 0 4px 0 #005377;
+    top: 2px; }
+
+.btn-social-g {
+  box-shadow: 0 5px 0 #852515;
+  border: none;
+  border-radius: 4px;
+  background: #C43828;
+  color: #fff; }
+  .btn-social-g:hover {
+    box-shadow: 0 4px 0 #852515;
+    top: 2px; }
+
+.btn-social-gi {
+  box-shadow: 0 5px 0 #373532;
+  border: none;
+  border-radius: 4px;
+  background: #282828;
+  color: #fff; }
+  .btn-social-gi:hover {
+    box-shadow: 0 4px 0 #373532;
+    top: 2px; }
+
+/*# sourceMappingURL=style.css.map */
